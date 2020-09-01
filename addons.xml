@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.git.browser" version="1.2.2" name="Git Browser" author="tvaddons">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.myconnpy" option="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Install Kodi Addons directly from GitHub</summary>
+        <description lang="en">Git Browser for Kodi. Using this tool, you'll be able to install any Kodi addon that is developed or distributed through GitHub.</description>
+        <disclaimer lang="en">Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+    </extension>
+</addon>
+
+<addon id="plugin.image.bancasapo" name="Banca Sapo" version="3.0.1" provider-name="enen92">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>image</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Daily portuguese newspapper covers in Kodi</summary>
+        <summary lang="pt_PT">Capas diÃ¡rias dos jornais portugueses no Kodi</summary>
+        <description lang="en_GB">A Kodi image plugin for Banca Sapo</description>
+        <description lang="pt_PT">Um plugin para o Kodi para aceder Ã  Banca Sapo</description>
+        <language>pt</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <website>https://24.sapo.pt/jornais</website>
+        <email>enen92@kodi.tv</email>
+        <source>https://github.com/enen92/plugin.image.bancasapo</source>
+        <news>
+            3.0.1:
+                - Automatic submissions to krypton and matrix
+                - Fix languages
+                - Addon-check fixes
+        </news>
+        <disclaimer lang="en_GB">Addon not endorsed by SAPO</disclaimer>
+        <disclaimer lang="pt_PT">Addon nÃ£o desenvolvido pelo SAPO</disclaimer>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+            <screenshot>resources/images/screenshot-01.jpg</screenshot>
+            <screenshot>resources/images/screenshot-02.jpg</screenshot>
+            <screenshot>resources/images/screenshot-03.jpg</screenshot>
+            <screenshot>resources/images/screenshot-04.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.exodus" version="8.6.3" name="Exodus" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.exodus" />
+		<import addon="script.exodus.artwork" />
+		<import addon="script.exodus.metadata" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.exoscrapers" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="repository.kodibae" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exodus</summary>
+		<description lang="en">Please visit [COLOR blue]www.exodusvpn.com[/COLOR] for Exodus support and assistance! Kindly note that Exodus is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor itâ€™s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<description lang="de">Bitte besuche [COLOR blue]www.exodusvpn.com[/COLOR] fÃ¼r UnterstÃ¼tzung und Fragen zu Exodus! Beachte dabei, dass Exodus nicht offizieller Teil des Media Players ist den du gerade verwendest und daher nicht von dem offiziellen Support-KanÃ¤le abgedeckt wird, dieses Addon hat nichts zu tun mit dem Media-Player selbst, noch ist es dafÃ¼r beabsichtigt, es handelt sich hierbei lediglich um ein Drittanbieter-Anwendung die dem System hinzugefÃ¼gt wurde.</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+		<description lang="fr">SVP visitez [COLOR blue]www.exodusvpn.com[/COLOR] pour avoir de l'aide sur Exodus. Prenez note qu'Exodus n'est pas une partie intÃ©grante de votre outil de visionnement multimedia et SVP ne le mentionnez pas dans les media sociaux officiels, cet addiciel n'a rien a voir avec votre lecteur multimedia lui mÃªme, c'est simplement un addiciel qui a Ã©tÃ© ajoutÃ© Ã  votre systÃ¨me.</description>
+		<disclaimer lang="fr">L'auteur n'hÃ©berge pas ou ne distribue pas le contenu qui vous est affichÃ© avec cet addiciel. L'auteur n'a pas d'alliance avec les distributeurs de contenu.</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<website>https://www.exodusvpn.com/</website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" version="3.0.1.1" name="f4mTester" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="3.0.1.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repo.kuala" name="Kuala Repositorio" version="0.0.4" provider-name="akuala">
+    <extension point="xbmc.addon.repository" name="repository apollo">
+        <info compressed="true">https://raw.githubusercontent.com/akuala/Repo.Kuala-1/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/akuala/Repo.Kuala-1/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/akuala/Repo.Kuala-1/master/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <description>O AUTOR NAO E RESPONSAVEL POR QUALQUER CONTEUDOS ENCONTRADO NESSE ADDON</description>
+		<disclaimer lang="en">O AUTOR NAO E DE FORMA ALGUMA FILIADO O KODI OU TEAM KODI, ESSES CONTEUDOS OU RECURSOS SEM FIM LUCRATIVOS ORGANIZADO EXCLUSIVAMENTE PARA FINS EDUCA CIONAIS E PROTEGIDO PELA DOUTRINA DE USO DA LEI DE DIREITOS AUTORAIS ESPECIFICAMENTE A SECAO 107 QUE PROMOVE A LIBERDADE DE EXPRESSAO PERMITIDO O USO DE OBRAS PROTEGIDAS POR DIREITOS AUTORAIS.</disclaimer>
+		<platform>all</platform>
+		<website/>
+        <video_guide></video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+      <assets>
+      	<icon>icon.png</icon>
+    	<fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshots/01.jpg</screenshot>
+        <screenshot>resources/screenshots/02.jpg</screenshot>
+        <screenshot>resources/screenshots/03.jpg</screenshot>
+      </assets>
+	</extension>
+</addon>
+</addons>
