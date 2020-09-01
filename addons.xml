@@ -113,11 +113,11 @@
     </extension>
 </addon>
 
-<addon id="repo.kuala" name="Kuala Repositorio" version="0.0.4" provider-name="akuala">
-    <extension point="xbmc.addon.repository" name="repository apollo">
-        <info compressed="true">https://raw.githubusercontent.com/akuala/Repo.Kuala-1/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/akuala/Repo.Kuala-1/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/akuala/Repo.Kuala-1/master/master/</datadir>
+<addon id="Kuala Repositorio" name="Kuala Repositorio" version="0.0.4" provider-name="akuala">
+    <extension point="xbmc.addon.repository" name="Kuala Repositorio">
+        <info compressed="true">https://raw.githubusercontent.com/akuala/Kuala Repositorio/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/akuala/Kuala Repositorio/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/akuala/Kuala Repositorio/master/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
         <description>O AUTOR NAO E RESPONSAVEL POR QUALQUER CONTEUDOS ENCONTRADO NESSE ADDON</description>
