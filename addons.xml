@@ -75,6 +75,30 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.xmlerator" name="XMLerator" version="5.6.1" provider-name="TonyH">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.addon.common" version="2.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	<extension point="xbmc.service" library="service.py" start="[login|startup]" />
+		<summary lang="en">Generate xml's from online lists</summary>
+		<description lang="en"> Modified Version by ja5on to include extra sublinks  All credit to TonyH Generate xml's from user made lists using list numbers from tmdb, imdb, and trakt</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<news></news>
+		<genre>uk,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
 <addon id="plugin.video.AladoKids"
        name="[COLOR gold][B]ALADO [/COLOR][COLOR lime]KIDS[/B][/COLOR]"
        version="20.08.2020"
@@ -170,6 +194,32 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.kidzflix" name="[COLOR yellow][B]KID[/B][/COLOR][COLOR red][B]z[/B][/COLOR] [COLOR yellow][B]FLIX[/B][/COLOR]" version="0.2" provider-name="CocaCola Man">
+  <requires>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" />
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="pastebin.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR yellow][B]KID[/B][/COLOR][COLOR red][B]z[/B][/COLOR] [COLOR yellow][B]FLIX[/B][/COLOR]</summary>
+    <description lang="en">[COLOR yellow][B]KID[/B][/COLOR][COLOR red][B]z[/B][/COLOR] [COLOR yellow][B]FLIX[/B][/COLOR][COLOR white][B] BRINGING JOY TO A CHILD![/B][/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.kuala"
        name="[COLOR lime][B]kuala [/B][/COLOR]"
        version="19.08.2020"
@@ -238,6 +288,36 @@
         11. support for google captcha, now you can show and then post the text
 
     </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Nelinho"
+       name="[COLOR white][B]Nelinho[/B][/COLOR]"
+       version="18.08.2020"
+       provider-name="Nelinho">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary></summary>
+    <description>Team Milhanos</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -371,6 +451,21 @@
       </assets>
 	</extension>
 </addon>
+
+<addon id="repository.ApolloTV" name="[COLOR orange]ApolloTV addon-on repository[/COLOR]" version="1.0.0" provider-name="ApolloTV">
+    <extension point="xbmc.addon.repository" name="[COLOR orange]ApolloTV add-on repository[/COLOR]">
+        <info compressed="false">https://raw.githubusercontent.com/ApolloTVofficial/repository.ApolloTV/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/ApolloTVofficial/repository.ApolloTV/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/ApolloTVofficial/repository.ApolloTV/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>ApolloTV for Kodi</summary>
+        <description>Streaming: it's not rocket science.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.elementum" name="Elementum Repository" version="0.1.58" provider-name="elgatito"><requires></requires><extension point="xbmc.addon.repository" name="Elementum Repository"><info compressed="false">http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml</info><checksum>http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml.md5</checksum><datadir zip="true">http://127.0.0.1:65220/repository/elgatito/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Elementum updates</summary></extension></addon>
 
 <addon id="repository.mrpiracy" name="MrPiracy.top RepositÃ³rio" version="1.0.3" provider-name="MrPiracy.top">
 	<extension point="xbmc.addon.repository" name="MrPiracy Repository">
