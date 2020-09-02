@@ -60,6 +60,56 @@
     </extension>
 </addon>
 
+<addon id="plugin.program.advancedsettings"
+       name="Easy Advanced Settings"
+       version="0.8.8"
+       provider-name="TTMedia">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>video executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>CREATE,VIEW,EDIT AND DELETE YOUR ADVANCEDSETTINGS.XML FILE</summary>
+        <description>WITH THIS TOOL YOU CAN CREATE YOUR ADVANCED SETTINGS DIRECTLY IN KODI..IF YOU DON'T KNOW WHAT A SETTING DOES, DON'T ENABLE IT!</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE</license>
+        <forum></forum>
+        <website></website>
+        <source></source>
+        <email></email>
+    </extension>
+
+</addon>
+
+<addon id="plugin.program.aptoide" version="2018.01.08" name="Aptoide" provider-name="TTMedia">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <description>INSTALL/DOWNLOAD APK FROM APTOIDE APK STORE</description>
+
+		<summary lang="en">APTOIDE APK STORE</summary>
+		<platform>all</platform>
+		<forum>-</forum>
+		<website>-</website>
+		<source>-</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>-</news>
+	</extension>
+</addon>
+
 <addon id="plugin.program.milhanothemes" name="Milhano Themes" version="2.1" provider-name="Milhano Themes">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -629,6 +679,24 @@
     <platform>all</platform>
     <summary lang="en">Proxy for f4m</summary>
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+
+<addon
+  id="service.rom.collection.browser"
+  version="1.0.1"
+  name="Rom Collection Browser Service"
+  provider-name="carabalb, jimyx17, malte">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login"></extension>
+  <extension point="xbmc.addon.metadata">
+    <language></language>
+    <summary>Performs Rom Collection Browser startup tasks</summary>
+    <description>Some features in Rom Collection Browser require actions on XBMC startup: starting RCB after launching emulators in solo mode and scraping games on XBMC startup.</description>
+    <license>GPL 2.0</license>
+    <platform>android freebsd ios linux osx windows</platform>
   </extension>
 </addon>
 
