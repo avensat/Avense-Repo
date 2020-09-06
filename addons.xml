@@ -177,34 +177,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.DarkAngel"
-       name="[COLOR fuchsia][B]DarkAngel[/B][/COLOR]"
-       version="20.08.2020"
-       provider-name="DarkAngel">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-	<import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>BY TEAM MILHANO</summary>
-    <description>TEAM MILHANO "WE LEAD THE WAY"
- </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.exodus" version="8.6.3" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -370,36 +342,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Nelinho"
-       name="[COLOR white][B]Nelinho[/B][/COLOR]"
-       version="18.08.2020"
-       provider-name="Nelinho">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-	<import addon="plugin.video.SportsDevil" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary></summary>
-    <description>Team Milhanos</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.now_music" name="[COLOR blue]N[/COLOR]ow [COLOR red]M[/COLOR]usic"	version="2.1.8"	provider-name="Pulse Builds">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -477,34 +419,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.traveco"
-       name="[COLOR yellow][B]Traveco[/B][/COLOR]"
-       version="20.08.2020"
-       provider-name="traveco">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-	<import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>BY TEAM MILHANO</summary>
-    <description>TEAM MILHANO "WE LEAD THE WAY"
- </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.vstream" name="vStream" version="0.8.0" provider-name="Venom, TmpName, Arias800, Razorex, Kodigoal, Sizanic, Yodidon">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -547,63 +461,6 @@
 			<screenshot>screenshot-03.jpg</screenshot>
 		</assets>
     </extension>
-</addon>
-
-<addon id="plugin.video.Zeus"
-       name="[COLOR orange][B]Zeus [/B][/COLOR]"
-       version="20.08.2020"
-       provider-name="Zeus">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-	<import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>BY TEAM MILHANO</summary>
-    <description>TEAM MILHANO "WE LEAD THE WAY"
- </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="program.ares.milhano" name=" [B][COLOR orange]Ares Milhano[/COLOR][/B]" version="1.0" provider-name="[B][COLOR red]Team Milhano Wizard[/COLOR][/B]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	</requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">https://t.me/AnonymousPT</summary>
-    <description lang="en">https://t.me/AnonymousPT</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="repo.alado" name="[COLOR lime][B]Alado[/COLOR][COLOR gold] Repository[/B][/COLOR]" version="0.1" provider-name="[COLOR lime][B]ALADO[/B][/COLOR]">
-	<extension point="xbmc.addon.repository" name="repo.alado">
-		<info compressed="false">https://raw.githubusercontent.com/Alado2020/repo.alado/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Alado2020/repo.alado/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Alado2020/repo.alado/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>[COLOR gold]By Team Milhano[/COLOR]</summary>
-		<description>[COLOR gold]By Team Milhano[/COLOR]</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon 	id="repo.kuala"
